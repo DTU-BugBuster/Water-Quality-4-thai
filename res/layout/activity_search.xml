@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/headerbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentsearchbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="72.0dip" android:baselineAligned="true" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/contentsearch" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="16.0sp" android:id="@id/txtsearch" android:background="@drawable/bgtext" android:padding="12.0dip" android:layout_width="260.0dip" android:layout_height="45.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:hint="จังหวัด สถานี ลุ่มน้ำ รหัสสถานี" android:singleLine="true" android:imeOptions="actionDone" />
+                <Spinner android:entries="@array/watertype" android:id="@id/waterselect" android:background="@drawable/bgspinnerlong" android:paddingRight="35.0dip" android:layout_width="260.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                <ImageView android:id="@id/imgsearch" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/btnsearcd" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip">
+                <Spinner android:textSize="16.0dip" android:entries="@array/scaleauto" android:id="@id/parameterselected" android:background="@drawable/bgspinershort" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                <Spinner android:entries="@array/scalemanual" android:id="@id/parameterselected1" android:background="@drawable/bgspinershort" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                <Spinner android:entries="@array/scalesea" android:id="@id/parameterselected2" android:background="@drawable/bgspinershort" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                <Spinner android:entries="@array/value" android:id="@id/value" android:background="@drawable/bgspinershort" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0" />
+                <EditText android:textSize="16.0dip" android:id="@id/valueindex" android:background="@drawable/bgtext" android:paddingLeft="3.0dip" android:layout_width="100.0dip" android:layout_height="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:ems="10" android:digits="0,1,2,3,4,5,6,7,8,9,." android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/imgmap" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/btnmap" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contentlistsearch" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/contentsearchbox">
+        <ListView android:id="@id/listView1" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:dividerHeight="2.0dip" />
+    </LinearLayout>
+</RelativeLayout>

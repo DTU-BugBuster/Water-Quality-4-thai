@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:background="#ff676767" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_below="@id/lay_head">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="32.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/textheader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/txtSearch" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/linearLayout1" android:layout_alignParentLeft="true">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="17.0sp" android:id="@id/txtsearchmapdetail" android:background="#ffffffff" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="17.0dip" android:hint="@string/txtProvinceStationBasin" android:singleLine="true" android:imeOptions="actionDone" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Spinner android:entries="@array/scaleauto" android:id="@id/valuecompare" android:background="@drawable/bgspinnerlong" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="17.0dip" />
+            <Spinner android:entries="@array/scalemanual" android:id="@id/valuecomparemanual" android:background="@drawable/bgspinnerlong" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="17.0dip" />
+            <Spinner android:entries="@array/scalesea" android:id="@id/valuecomparesea" android:background="@drawable/bgspinnerlong" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="17.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Spinner android:entries="@array/value" android:id="@id/keyvalue" android:background="@drawable/bgspinnerlong" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="17.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="17.0sp" android:id="@id/txtvalue" android:background="#ffffffff" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="23.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="10.0dip" android:hint=" ระบุค่าที่ต้องการค้นหา" android:singleLine="true" android:inputType="number" android:imeOptions="actionDone" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/imgsearchmapdetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/searchstation" />
+    </LinearLayout>
+    <include android:id="@id/lay_head" android:layout_width="fill_parent" android:layout_height="72.0dip" layout="@layout/headerback" />
+</RelativeLayout>

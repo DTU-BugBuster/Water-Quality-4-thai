@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#e6000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:paddingTop="8.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="right" android:id="@id/txt_good_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="center" android:id="@id/txt_good_val_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:id="@id/txt_good_end_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="right" android:id="@id/txt_good_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="center" android:id="@id/txt_good_val_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:id="@id/txt_good_end_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/lay_good_3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="right" android:id="@id/txt_good_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="center" android:id="@id/txt_good_val_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:id="@id/txt_good_end_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="right" android:id="@id/txt_good_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="center" android:id="@id/txt_good_val_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:id="@id/txt_good_end_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/lay_good_5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="right" android:id="@id/txt_good_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="center" android:id="@id/txt_good_val_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:id="@id/txt_good_end_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="right" android:id="@id/txt_good_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="center" android:id="@id/txt_good_val_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:id="@id/txt_good_end_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="right" android:id="@id/txt_good_7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:gravity="center" android:id="@id/txt_good_val_7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:id="@id/txt_good_end_7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <ImageView android:background="@drawable/line_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:id="@id/txt_avg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:id="@id/txt_avg_val" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:id="@id/txt_sd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" />
+                <TextView android:textSize="@dimen/txt_size_sum" android:textColor="@android:color/white" android:id="@id/txt_sd_val" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" />
+                <ImageView android:id="@id/img_sd" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

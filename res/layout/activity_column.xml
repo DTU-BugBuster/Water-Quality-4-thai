@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@id/tableLayout1" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:id="@id/tableRow3" android:background="#80000000" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgcountry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitEnd" android:adjustViewBounds="true" />
+        <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@android:color/white" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/txtcountry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="250.0dip" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/arrowww" android:scaleType="fitEnd" android:adjustViewBounds="true" />
+    </TableRow>
+</TableLayout>

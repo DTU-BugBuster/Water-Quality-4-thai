@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lay_img_province" android:background="@drawable/backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/contenttxthead" android:background="#88000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/txt_station_name" android:paddingRight="40.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:maxLines="1" />
+        <TextView android:textSize="15.0sp" android:textStyle="normal" android:textColor="@android:color/white" android:id="@id/txt_province_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="150.0dip" android:minWidth="100.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center_horizontal" android:background="#d8000000" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/lay_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff808080" android:id="@id/txt_update" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:id="@id/txt_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff808080" android:id="@id/txt_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="60.0sp" android:textColor="#ff00adee" android:id="@id/txt_wqi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_btn_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_detail" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/img_btn_favorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_favorite" android:layout_above="@id/img_btn_detail" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/lay_sub_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/lay_head">
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/custom_detail" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/progress" android:background="#66000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

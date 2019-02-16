@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/headerback" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentmap" android:background="#ff242d2c" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="72.0dip">
+        <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="76.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageButton android:id="@id/btnhazemap" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btnhazemap" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageButton android:id="@id/btnstandardmap" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btnstandardmap" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <ImageButton android:id="@id/btnsattle" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/btnsattlemap" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <ImageButton android:id="@id/btnhybriddmap" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/btnhybridmap" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/headerbar" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentlist" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="72.0dip" android:layout_toRightOf="@id/listbutton" android:layout_alignParentTop="true">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/language" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/language" android:layout_weight="0.6" />
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/thaiselecter" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/th_w" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/linex" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/linexxx" android:layout_weight="0.3" />
+                        <ImageView android:id="@id/engselecter" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/eng" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+                    <ImageView android:id="@id/notif" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/notification" android:layout_weight="0.6" />
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/onselecter" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/on_w" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/linexxs" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/linexxx" android:layout_weight="0.3" />
+                        <ImageView android:id="@id/offselecter" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/off" android:scaleType="fitCenter" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/tab_parameter" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/textauto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip" android:text="น้ำผิวดินจากสถานีอัตโนมัติ" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Spinner android:entries="@array/scaleauto" android:id="@id/autoparameterselected" android:background="@drawable/bgspinershort" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <Spinner android:entries="@array/scaleauto2" android:id="@id/autoparameterselected2" android:background="@drawable/bgspinershort" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                </LinearLayout>
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/textmanual" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip" android:text="น้ำผิวดินจากการเก็บตัวอย่้่าง" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <Spinner android:entries="@array/scalemanual" android:id="@id/manualparameterselected" android:background="@drawable/bgspinershort" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <Spinner android:entries="@array/scalemanual2" android:id="@id/manualparameterselected2" android:background="@drawable/bgspinershort" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                </LinearLayout>
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffffffff" android:id="@id/textsea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip" android:text="น้ำทะเลจากการเก็บตัวอย่าง" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="40.0dip">
+                    <Spinner android:entries="@array/scalesea" android:id="@id/seaparameterselected" android:background="@drawable/bgspinershort" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <Spinner android:entries="@array/scalesea2" android:id="@id/seaparameterselected2" android:background="@drawable/bgspinershort" android:layout_width="150.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
